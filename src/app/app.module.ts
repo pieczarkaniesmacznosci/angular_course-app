@@ -11,7 +11,7 @@ import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
-    ServerComponent, //Registering component so Angular know it exists
+    ServerComponent, // Registering component so Angular know it exists
     ServersComponent,
     WarningAlertComponent,
     SuccessAlertComponent
