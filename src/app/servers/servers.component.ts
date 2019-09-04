@@ -15,6 +15,8 @@ export class ServersComponent implements OnInit {
   serverName = '';
   userName = '';
   servers = ['testServer', 'testServer2'];
+  visible = true;
+  log = [];
 
   constructor() {
     setTimeout(() => {
@@ -35,6 +37,10 @@ export class ServersComponent implements OnInit {
   }
   onUserNameClick() {
     this.userName = '';
+  }
+  onSwitchVisibility() {
+    this.visible = !this.visible;
+    this.log.push(new Date());
   }
 }
 
