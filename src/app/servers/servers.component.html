@@ -23,9 +23,4 @@
 </button>
 <p>{{ userName }}</p> -->
 
-<app-server></app-server>
-<app-server></app-server>
-<app-server></app-server>
-<app-server></app-server>
-<app-server></app-server>
-<app-server></app-server>
+<app-server *ngFor="let item of servers"></app-server>
